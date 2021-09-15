@@ -1,0 +1,61 @@
+<footer class="footer-section">
+  <div class="container">
+
+      <div class="footer-content pt-1 pb-5 ">
+          <div class="row">
+              <div class="col-xl-4 col-lg-4 mb-50">
+                  <div class="footer-widget">
+                      <div class="footer-logo">
+                          <a href="/"><img src="/assets/homepage/logo.png" data-aos="zoom-in" data-aos-delay="200" class="img-fluid" alt="MediGo" width="100px" ></a>
+                      </div>
+                      <div class="footer-text">
+                          <p>We welcome you to mediGo, the medicine center with high-quality service and consistently good customer experience.</p>
+                      </div>
+                      <div class="footer-social-icon">
+                          <span>Follow us</span>
+                          <a href="#"><i class="fa fa-facebook-official" style="font-size:24px"></i></a>
+                          <a href="#"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+                          <a href="#"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
+                          <a href="#"><i class="fa fa-twitter" style="font-size:24px"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                <div class="footer-widget">
+                    <div class="footer-widget-heading">
+                        <h3>Useful Links</h3>
+                    </div>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a routerLink="/about">About</a></li>
+                        <li><a routerLink="/brands">Medicines</a></li>
+                        <li><a routerLink="/equipments">Equipments</a></li>
+                        <li><a routerLink="/personal-care">Personal Care</a></li>
+                        <li><a routerLink="/baby-care">Baby Care</a></li>
+                        <li><a routerLink="/covid">COVID Essentials</a></li>
+                        <li><a routerLink="/">FAQs</a></li>
+                        <li><a routerLink="/">Contact Us</a></li>
+                        <li><a routerLink="/">Subscribe Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                  <div class="footer-widget-heading-sub">
+                      <h3>Subscribe</h3>
+                  </div>
+                  <div class="footer-text mb-25">
+                      <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                  </div>
+                  <div class="subscribe-form">
+                      <form action="#" #f="ngForm">
+                          <input type="text" name="email" required [(ngModel)]="email" placeholder="Email Address">
+                          <button [disabled]="!f.form.valid" (click)="onSubscribe()" ><i class="fa fa-envelope"></i></button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</footer>

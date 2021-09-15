@@ -1,0 +1,90 @@
+[
+  {
+    "categoryName": "feature",
+    "brand": "Sugar Free Private Limited (By Zydus)",
+    "name":"Sugar Free Private Limited (By Zydus) Natura Low Calorie Sweetener Sweet Drops 10 ml",
+    "description":"Generic Name:  Artificial Sweetener",
+    "image":"/assets/images/medicine/medicine20.5.jpg",
+    "costPrice":140.00,
+    "discountedPrice":102.20,
+    "discountedPercentage":27,
+    "expiryDate":"Dec-2022"
+  },
+  {
+    "categoryName": "feature",
+    "brand": "Glenmark Pharmaceuticals Limited",
+    "name":"Candid Medicated Soap 125 gm",
+    "description":"Generic Name: CLOTRIMAZOLE 1% W/W",
+    "image":"/assets/images/medicine/medicine16.13.jpg",
+    "costPrice":170,
+    "discountedPrice":129.2,
+    "discountedPercentage":24,
+    "expiryDate":"Jul-2023"
+  },
+  {
+    "categoryName": "feature",
+    "brand": "Novartis India Private Limited",
+    "name":"Voltaflam 50 mg Tablet (10 Tab)",
+    "description":"Generic Name: DICLOFENAC",
+    "image":"/assets/images/medicine/medicine19.10.jpg",
+    "costPrice":20.85,
+    "discountedPrice":17.10,
+    "discountedPercentage":18,
+    "expiryDate":"Oct-2023"
+  },
+  {
+    "categoryName": "feature",
+    "brand": "Franco Indian Pharmaceuticals Pvt Ltd",
+    "name":"Atheart 10 mg Tablet (10 Tab)",
+    "description":"Generic Name: Atorvastatin Calcium Equivalent To Atorvastatin 10MG",
+    "image":"/assets/images/medicine/medicine14.3.jpg",
+    "costPrice":57.40,
+    "discountedPrice":43.62,
+    "discountedPercentage":24,
+    "expiryDate":"Feb-2023"
+  },
+  {
+    "categoryName": "feature",
+    "brand": "Medicare",
+    "name":"3 Ply Mask Packet Of 100",
+    "description":"As the pandemic takes a toll on our lifestyle, 3 ply masks have become an everyday essential. There are several types of masks available in the market but these are the most effective and offer you three-layered protection.",
+    "image":"/assets/images/covid/covid5.jpg",
+    "costPrice":400,
+    "discountedPrice":352,
+    "discountedPercentage":12,
+    "expiryDate":"Jan-2023"
+  },
+  {
+    "categoryName": "feature",
+    "brand": "Dettol",
+    "name":"Dettol Antiseptic Liquid Bottle Of 125 Ml",
+    "description":"Dettol Antiseptic Liquid is widely used to prevent infections caused due to bacteria, fungus and viruses. As a first-aid, Dettol is used for cleaning wounds and scrapes, preventing the risk of any infections. It is dermatologically tested and recommended by the Indian Medical Association for surface cleaning and as a personal hygiene liquid.",
+    "image":"/assets/images/covid/covid6.jpg",
+    "costPrice":60.5,
+    "discountedPrice":56.27,
+    "discountedPercentage":7,
+    "expiryDate":"Dec-2021"
+  },
+  {
+    "categoryName": "feature",
+    "brand": "Johnson's",
+    "name":"Johnson's No More Tears Baby Shampoo Bottle Of 200 Ml",
+    "description":"A baby's physique is extremely delicate and sensitive. Johnson's No More Tears Baby Shampoo is the perfect formulation to gently cleanse a baby's scalp and hair and the foam doesn't irritate the eyes. It leaves the hair soft, shiny and fresh without causing any stinging sensations.",
+    "image":"/assets/images/baby/babycare16.jpg",
+    "costPrice":180,
+    "discountedPrice":171,
+    "discountedPercentage":5,
+    "expiryDate":"Jul-2022"
+  },
+  {
+    "categoryName": "feature",
+    "brand": "Similac",
+    "name":"Similac Iq+ Baby Food Stage 1 Infant Formula Dha + Natural Vitamin E Up To 6 Months Tin Of 400 G",
+    "description":"The Similac Stage 2 baby formula is the nutritional diet for infants after the age of 6 months. It is a follow-up feeding formula that is used after the Similar Stage 1 baby formula. ",
+    "image":"/assets/images/baby/babycare17.jpg",
+    "costPrice":680,
+    "discountedPrice":680,
+    "discountedPercentage":0,
+    "expiryDate":"Nov-2022"
+  }
+]

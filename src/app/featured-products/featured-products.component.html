@@ -1,0 +1,68 @@
+<section class="featured-featureds">
+  <div class="containerr">
+    <div class="row carouselTitle">
+      <h2>Featured Products</h2>
+    </div>
+  </div>
+  <div class="carousel-reviews broun-block">
+    <div class="container">
+      <div class="row">
+        <div id="carousel-reviews" class="carousel slide" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active" >
+              <div class="col-md-3 col-sm-6" *ngFor="let product of featuredList">
+                <div class="wrapper">
+                  <div class="product-card">
+                    <div class="image">
+                      <a (click)="onClickFeaturedCard()" routerLink="/product-detail/{{product.prodId}}" >
+                        <img src={{product.image}} alt="">
+                      </a>
+
+                    </div>
+                    <div class="discount">
+                      <span>{{product.discountedPercentage}}%</span>
+                    </div>
+                    <div  (click)="onClickFeaturedCard()" routerLink="/product-detail/{{product.prodId}}" class="caption">
+                      <div class="name">
+                        <a>{{product.name}}</a>
+                      </div>
+                      <div class="price">
+                        <span class="price-new">Rs. {{product.discountedPrice}}</span>
+                        <span class = "price-old">Rs. {{product.costPrice}}</span>
+                      </div>
+                    </div>
+                    <div class="add-to-cart">
+
+                      <button class = "btn-cart" (click)="addToCart(product.prodId)">
+                        <!-- <fa-icon [icon]="faCartPlus"></fa-icon> -->
+                        <i class="fa fa-shopping-cart"></i>
+                        <!-- <i>
+                          <img src="../../../../assets/images/cart-plus-solid.svg" alt="">
+                        </i> -->
+                        ADD TO CART</button>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  <div class="productCards">
+    <div class="productCardsItem"  *ngFor="let product of featuredList">
+      <app-product-card [product]=product></app-product-card>
+    </div>
+  </div>
+</section>
+
+
+
+

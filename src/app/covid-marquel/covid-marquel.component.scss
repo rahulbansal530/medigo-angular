@@ -1,0 +1,24 @@
+// COLOR THEMES
+$theme-color:#106EEA;
+$theme-color-hover:#3b8af2;
+$black-nav:#222222;
+$black-top:#222222;
+$black-top2:#555555;
+$black-body:#444444;
+$theme-grey:#F1F6FE;
+$dark-blue-text:#062B5B; // (to be used with theme gray )
+$theme-light-grey:#F6F9FE;
+$grey-text-contactus:#777777;
+
+// FONT THEMES
+$font-heading:Montserrat;
+.covid-headline{
+  margin-top: 7rem;
+  height:5rem;
+  font-family: $font-heading;
+  background-color: $theme-color-hover;
+  font-size:1.5rem;
+  font-weight: 550;
+  color:$theme-grey;
+  padding:1.25rem 6rem;
+}

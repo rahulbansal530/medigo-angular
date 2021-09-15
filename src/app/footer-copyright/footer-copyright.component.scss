@@ -1,0 +1,27 @@
+// COLOR THEMES
+$theme-color:#106EEA;
+$theme-color-hover:#3b8af2;
+$black-nav:#222222;
+$black-top:#222222;
+$black-top2:#555555;
+$black-body:#444444;
+$theme-grey:#F1F6FE;
+$dark-blue-text:#062B5B; // (to be used with theme gray )
+$theme-light-grey:#F6F9FE;
+$grey-text-contactus:#777777;
+$background-blue-light:#F6F9FE;
+
+// FONT THEMES
+$font-heading:Montserrat;
+
+.outer-container{
+  background-color: $background-blue-light;
+  padding: 2rem;
+  font-family: $font-heading;
+  text-align: center;
+  color: $black-body;
+  font-size: 1.5rem;
+  align-items: center;
+  font-weight: 550;
+  opacity: .8;
+}

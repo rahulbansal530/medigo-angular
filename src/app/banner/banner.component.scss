@@ -1,0 +1,164 @@
+/*--------------------------------------------------------------
+# General Scss Settings
+--------------------------------------------------------------*/
+
+// COLOR THEMES
+$theme-color:#106EEA;
+$theme-color-hover:#3b8af2;
+$black-nav:#222222;
+$black-top:#222222;
+$black-top2:#555555;
+$black-body:#444444;
+$theme-grey:#F1F6FE;
+$dark-blue-text:#062B5B; // (to be used with theme gray )
+$theme-light-grey:#F6F9FE;
+$grey-text-contactus:#777777;
+
+// FONT THEMES
+$font-heading:Montserrat;
+
+body {
+  // font-family: Ubuntu;
+  color: $black-body;
+}
+
+a {
+  color: $theme-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $theme-color-hover;
+  text-decoration: none;
+}
+
+#banner {
+  width: 100%;
+  height: 75vh;
+  margin-top: 6.5rem;
+  background: url("/assets/homepage/banner.jpg") top left;
+  // opacity: 2;
+  background-size: cover;
+  position: relative;
+}
+
+#banner .container {
+  position: relative;
+}
+
+#banner h1 {
+  margin: 0;
+  font-size: 4.25rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  color: $black-top;
+  font-family: $font-heading;
+  margin-bottom:1.5rem !important;
+}
+
+#banner h1 span {
+  color: $theme-color;
+}
+
+#banner h5 {
+  font-family:  $font-heading;
+  color: $black-top2;
+  margin: 0.3125rem 25rem 1.875rem 0;
+  font-size: 1.5rem;
+  width: 50%;
+  font-weight: 500;
+}
+
+#banner .btn-get-started {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.0625rem;
+  display: inline-block;
+  padding: 1.2rem;
+  border-radius: 0.3rem;
+  transition: 0.5s;
+  color: #fff;
+  background: $theme-color;
+  font-family: $font-heading;
+}
+
+#banner .btn-get-started:hover {
+  background: #247cf0;
+}
+
+@media (min-width: 64rem) {
+  #banner {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 48rem) {
+  #banner {
+    height: 100vh;
+  }
+  #banner h1 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+  #banner h5 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.875rem;
+    margin-right: 0.625rem;
+  }
+
+  #banner .btn-get-started{
+    font-size: 0.8125rem;
+  }
+}
+
+@media (max-height: 31.25rem) {
+  #banner {
+    height: 120vh;
+  }
+}
+
+
+@media screen and (min-width:300px) and (max-width:667px)
+{
+  #banner {
+    width: 100%;
+    height: 40vh;
+    margin-top: 4rem;
+    background: url("/assets/homepage/banner.jpg") top left;
+    background-size: cover;
+    position: relative;
+  }
+  #banner h1{
+    font-size: 1.75rem;
+    line-height: 1.5rem;
+    margin-top:2rem;
+    margin-left: 2rem;
+  }
+  #banner h5 {
+    font-size: .85rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    margin-right: 0.25rem;
+    margin-left: 2rem;
+    width:65%;
+  }
+
+  #banner .btn-get-started {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .75rem;
+    margin-left: 2rem;
+    letter-spacing: 0.0625rem;
+    display: inline-block;
+    padding: .5rem;
+    border-radius: 0.3rem;
+    transition: 0.5s;
+    color: #fff;
+    background: $theme-color;
+    font-family: $font-heading;
+  }
+}
+
+

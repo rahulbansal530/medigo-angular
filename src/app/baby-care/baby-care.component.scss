@@ -1,0 +1,182 @@
+
+.productCards {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  // justify-content: space-around;
+  // align-items: center;
+  width: 95.8%;
+  // border: 1px solid red;
+  // align-self: center;
+  margin: 3em;
+  flex-wrap: wrap;
+  // text-align: center;
+  // position: relative;
+  // left:2.75%;
+  margin: auto;
+  margin-top:3rem;
+}
+
+.productCardsItem {
+  // width: 20%;
+  margin: 0 1.1rem;
+}
+
+
+
+
+//search sort to be added every where
+// COLOR THEMES
+$theme-color:#106EEA;
+$theme-color-hover:#3b8af2;
+$black-nav:#222222;
+$black-top:#222222;
+$black-top2:#555555;
+$black-body:#444444;
+$theme-grey:#F1F6FE;
+$dark-blue-text:#062B5B; // (to be used with theme gray )
+$theme-light-grey:#F6F9FE;
+$grey-text-contactus:#777777;
+
+// FONT THEMES
+$font-heading:Montserrat;
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+   width: 50%;
+ // position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-right:4rem;
+}
+.sort{
+  width:50%;
+  display: flex;
+  align-self: flex-start;
+  margin-left:1.5rem;
+  font-family: $font-heading;
+  font-weight: 600;
+  .dropdown{
+    background-color: $theme-grey;
+    .dropdown-menu{
+      background-color: $theme-light-grey;
+    }
+  }
+  .dropdown-item{
+    font-size:1.25rem;
+  }
+  .btn-primary{
+    border-radius: 0;
+    height:36px;
+    font-size: 1.25rem;
+    padding:7.5px 18px 5px 18px;
+  }
+}
+.searchTerm {
+  width: 100%;
+  border: none;
+  background-color: $theme-grey;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  width: 25rem;
+  border-radius:0;
+  outline: none;
+  color: $black-nav;
+  font-family: $font-heading;
+  font-size: 1.2rem;
+  opacity: 0.9;
+
+}
+
+.searchTerm::placeholder {
+  padding-left: 0.6rem;
+}
+
+.searchTerm:focus{
+  color: $black-nav;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid $theme-color-hover;
+  background: $theme-color-hover;
+  text-align: center;
+  color: #fff;
+  border-radius:0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 98%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  left: 50%;
+  margin:auto;
+  margin-top:5rem;
+  margin-bottom: 5rem;
+  transform: translate(-50%, -50%);
+}
+
+.sort-btn{
+    width:50%;
+    display: flex;
+    align-self: flex-start;
+    font-family: $font-heading;
+    font-weight: 600;
+    height:36px;
+    border:none;
+    select{
+      width:11.5rem;
+      border:none;
+      background-color: #3b8af2;
+      color:white;
+      font-family: $font-heading;
+      font-weight: 600;
+      font-size: 1.25rem;
+      padding:.5rem .5rem;
+    }
+    select:focus{
+      border:none !important;
+      outline:none !important;
+    }
+    option{
+      background-color: $theme-grey;
+    }
+    option:focus{
+      outline:none !important;
+      border:none !important;
+    }
+    .ng-untouched,.ng-valid,.ng-dirty{
+      border:none;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:667px)
+{
+  .productCards {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 97%;
+    margin: 3em 0.5em;
+    // flex-wrap: wrap;
+    // margin: auto;
+    // margin-top:3rem;
+  }
+
+  .productCardsItem {
+    margin: 0 0.3rem;
+  }
+  .search {
+    margin-right: 0.75rem;
+  }
+  .sort {
+    margin-left: 0.4rem;
+  }
+}

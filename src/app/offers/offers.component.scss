@@ -1,0 +1,41 @@
+#offers {
+  margin-top:2em;
+  background-color: #F6F9FE;
+}
+
+.carousel-control {
+  background: none !important;
+
+}
+
+.glyphicon {
+  color: #106EEA !important;
+  // margin-left:-3.5em;
+  // margin-right: -3.5em;
+}
+
+.carousel-inner img {
+  width: 90em;
+  height: auto;
+  margin-left: 10%;
+}
+@media screen and (min-width:300px) and (max-width:667px)
+{
+  .carousel-inner img {
+    width: 60em;
+    height: fit-content;
+    margin: auto;
+  }
+  .glyphicon {
+    color: #106EEA !important;
+    margin-left:-1.85em;
+    margin-right: -1.7em;
+    margin-top: -1em;
+    font-size: 0.8em;
+  }
+  .carousel-inner {
+    width: 100%;
+  }
+
+
+}

@@ -1,0 +1,57 @@
+
+$theme-color:#106EEA;
+$theme-color-hover:#3b8af2;
+$black-nav:#222222;
+$black-top:#222222;
+$black-top2:#555555;
+$black-body:#444444;
+$theme-grey:#F1F6FE;
+$dark-blue-text:#062B5B; // (to be used with theme gray )
+$theme-light-grey:#F6F9FE;
+$grey-text-contactus:#777777;
+
+$font-heading:Montserrat;
+
+.productCards {
+  display: flex;
+  // justify-content: space-around;
+  // align-items: center;
+  width: 95.8%;
+  // border: 1px solid red;
+  // align-self: center;
+  margin: 3em;
+  flex-wrap: wrap;
+  // text-align: center;
+  // position: relative;
+  // left:2.75%;
+  margin: auto;
+  margin-top:0rem;
+  padding-top:0;
+}
+
+.productCardsItem {
+  // width: 20%;
+  margin: 0 1.1rem;
+}
+
+.carouselTitle {
+  background-color: $theme-light-grey;
+  width: 94%;
+  text-align: center;
+  border-radius: 0.3em;
+  margin:3rem auto 0rem auto;
+}
+
+.carouselTitle h2 {
+  color: $black-nav;
+  font-family: Montserrat;
+  font-size: 2rem;
+  padding:0.75em 1em;
+  font-weight: 600;
+  margin-top: 0.75rem;
+  opacity: .8;
+  margin-bottom: 1rem;
+}
+.containerr{
+  width:100%;
+}

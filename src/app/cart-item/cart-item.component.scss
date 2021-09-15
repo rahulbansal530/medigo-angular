@@ -1,0 +1,128 @@
+.cart-item-card{
+  display: flex;
+  // height: 12rem;
+  // border:1px solid black;
+  // border-bottom: 1px solid rgb(172, 167, 167);
+  border-bottom: 1px solid rgba(21,27,57,.1);
+  padding: 1rem;
+  .image{
+    display: flex;
+    img{
+      height: 8rem;
+      width: auto;
+      // border:1px solid gray;
+      // margin: auto 0.7rem;
+      // margin: auto;
+
+
+    }
+  }
+  .cart-item-details{
+    margin-left: 2rem;
+    width: 90%;
+    // .title{
+
+    // }
+    // .brand{
+
+    // }
+    .price-and-quantity{
+
+      display: flex;
+      justify-content: space-between;
+
+      .price{
+        padding:0.5rem 0;
+
+        .price-old{
+          color:#fe5a5a;
+          font-size: 1.2em;
+          text-decoration: line-through;
+          // margin-right: 0.7rem;
+          font-weight: 600;
+
+        }
+        .price-new{
+          color:#333333;
+          opacity: 0.9;
+          font-size: 1.6em;
+          font-weight: 700;
+          margin-right: 0.7rem;
+
+        }
+      }
+      .quantity-wrap{
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        .flex{
+          display: flex;
+        }
+        .quantity{
+          // width: 7rem;
+          // border: 1px solid red;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .fa-plus-circle,.fa-minus-circle {
+          // color: #106EEA;
+          color:black;
+          margin: auto 0.5em;
+        // background: #f6f6f7;
+        }
+
+        .quantityValue {
+           width: 2.3em;
+           height: 2.3em;
+           border-radius: 50%;
+           border: 1px solid #106EEA;
+           color: #222222;
+           font-size: 1.5em;
+           padding:0.2em;
+           text-align: center;
+           font-weight: bold;
+        }
+
+        .quantityValue:focus {
+          outline: none;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        .quantityLabel {
+          margin-top: 0.8rem;
+        }
+
+      }
+    }
+
+    .remove{
+      // float: right;
+      margin-top: 1rem;
+      .btn-remove{
+        width: 7rem;
+        // background-color: #106EEA;
+        // background: #f6f6f7;
+        border:none;
+        height: 2.5rem;
+        font-weight: bold;
+        // color: white;
+        color: rgba(21,27,57,.6);
+        border-radius: 0.3rem;
+      }
+    }
+
+  }
+}
+
+@media screen and (min-width:300px) and (max-width:667px)
+{
+   .price-and-quantity {
+     display: flex;
+     flex-direction: column;
+   }
+}

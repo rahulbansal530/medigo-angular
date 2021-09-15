@@ -1,0 +1,99 @@
+// COLOR THEMES
+$theme-color:#106EEA;
+$theme-color-hover:#3b8af2;
+$black-nav:#222222;
+$black-top:#222222;
+$black-top2:#555555;
+$black-body:#444444;
+$theme-grey:#F1F6FE;
+$dark-blue-text:#062B5B; // (to be used with theme gray )
+$theme-light-grey:#F6F9FE;
+$grey-text-contactus:#777777;
+
+// FONT THEMES
+$font-heading:Montserrat;
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients {
+  text-align: center;
+}
+.client-container{
+  width: 100%;
+}
+.clients img {
+  max-width: 60%;
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  padding: 1rem 1rem;
+  margin-right: 2rem;
+  margin-left:3rem;
+}
+
+.payment-heading{
+  color:$theme-color;
+  padding:0rem 0;
+  background-color: white;
+}
+
+.row{
+  background-color: white;
+  height:10rem;
+}
+.clients img:hover {
+  transform: scale(1.15);
+}
+
+.row-mobile{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .clients img {
+    max-width: 20%;
+  }
+}
+
+@media screen and (min-width:300px) and (max-width:667px)
+{
+  .clients {
+    text-align: center;
+  }
+  .client-container{
+    width: 100%;
+  }
+  .clients img {
+    max-width: 20%;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    padding: 1rem 1rem;
+    margin-right: 2rem;
+    margin-left:2rem;
+    height:4rem;
+
+  }
+
+  .payment-heading{
+    color:$theme-color;
+    padding:0rem 0;
+    background-color: white;
+  }
+
+  .row{
+    background-color: white;
+    height:10rem;
+    display: none;
+  }
+  .row-mobile{
+    display: block;
+  }
+
+  .clients img:hover {
+    transform: scale(1.15);
+  }
+
+}
+
+
+

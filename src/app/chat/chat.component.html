@@ -1,0 +1,29 @@
+<main class="chat">
+  <div class="container">
+      <div class="chat-content">
+          <h2>MEDIGO EMERGENCY HELP 🚨</h2>
+          <div class="card scroll">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item" *ngFor="let chatMessage of webSocketService.chatMessages">
+                      <strong>{{chatMessage.user}} :&nbsp; </strong>
+                      <span>{{chatMessage.message}}</span>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <form  (ngSubmit)="sendMessage(sendForm)" #sendForm="ngForm">
+          <div class="chat-send row">
+              <div class="col-2">
+                  <input type="text" required class="form-control" placeholder="Name" name="user" id="input-user" ngModel>
+              </div>
+              <div class="col-8">
+                  <input type="text" required class="form-control" placeholder="Enter your message" name="message" id="input-message" ngModel>
+              </div>
+              <div class="col-2">
+                  <button type="submit" class="btn btn-lg btn-danger">Send</button>
+              </div>
+          </div>
+      </form>
+  </div>
+
+</main>

@@ -1,0 +1,32 @@
+<div class="wrapper">
+  <div class="product-card">
+    <div class="image">
+      <a href="" routerLink="/product-detail/{{product.prodId}}" >
+        <img src={{product.image}} alt="">
+      </a>
+
+    </div>
+    <div class="discount">
+      <span>{{product.discountedPercentage}}%</span>
+    </div>
+    <div  routerLink="/product-detail/{{product.prodId}}" class="caption">
+      <div class="name">
+        <a>{{product.name}}</a>
+      </div>
+      <div class="price">
+        <span class="price-new">Rs. {{product.discountedPrice}}</span>
+        <span class = "price-old">Rs. {{product.costPrice}}</span>
+      </div>
+    </div>
+    <div class="add-to-cart">
+
+      <button class = "btn-cart" (click)="addToCart(product.prodId)">
+        <!-- <fa-icon [icon]="faCartPlus"></fa-icon> -->
+        <i class="fa fa-shopping-cart"></i>
+        <!-- <i>
+          <img src="../../../../assets/images/cart-plus-solid.svg" alt="">
+        </i> -->
+        ADD TO CART</button>
+    </div>
+  </div>
+</div>

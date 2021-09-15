@@ -1,0 +1,129 @@
+
+#page-title {
+  font-family: 'Montserrat Semibold';
+  width: 94%;
+  margin: 3em auto;
+  margin-top:9rem;
+}
+
+#page-title p {
+  color:#ffffff;
+  font-size: 2.3em;
+  font-weight: bold;
+  margin:1.8em auto 1.5em 1em;
+}
+
+#page-title .reactLogo {
+    width:10em;
+    height: 8em;
+    margin-top: 1.5em;
+    margin-right: 3em;
+}
+
+.page-title-div {
+  background-color: #106EEA;
+  display: flex;
+  justify-content: space-between;
+  // margin: 0.25em 2.5em;
+  border-radius: 0.3rem;
+  height:11rem;
+}
+
+
+// ----------------------------------------
+.featured-services .icon-box {
+  padding: 22px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all .8s ease-in-out;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 1;
+}
+
+.featured-services .icon-box::before {
+  content: '';
+  position: absolute;
+  background: #cbe0fb;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 100%;
+  transition: all 0.2s;
+  z-index: -1;
+}
+
+.featured-services .icon-box:hover::before {
+  background: #106eea;
+  bottom: 0;
+  border-radius: 0px;
+}
+
+.featured-services .icon {
+  margin-bottom: 15px;
+}
+
+.featured-services .icon i {
+  font-size: 55px;
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+  color: #106eea;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.featured-services .title {
+  font-weight: 700;
+  margin-bottom: 13px;
+  font-size: 18px;
+}
+
+.featured-services .title a {
+  text-decoration: none;
+  color: #111;
+}
+
+.featured-services .description {
+  font-size: 12px;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+
+.featured-services .icon-box:hover .title a, .featured-services .icon-box:hover .description , .icon i{
+  color: #fff;
+}
+
+.featured-services .icon-box:hover .icon i {
+  color: #fff;
+}
+
+@media screen and (min-width:300px) and (max-width:667px)
+{
+  #page-title p {
+    color:#ffffff;
+    font-size: 1.9em;
+    font-weight: bold;
+    margin:1.8em auto 1.5em 0.1em;
+  }
+  #page-title .reactLogo {
+    width:8em;
+    height: 6.5em;
+    margin-top: 1.25em;
+    margin-right: 1.5em;
+  }
+
+ .page-title-div {
+  background-color: #106EEA;
+  display: flex;
+  justify-content: space-between;
+  // margin: 0.25em 2.5em;
+  border-radius: 0.3rem;
+  height:9rem;
+ }
+ #bannerIcon {
+   display: none;
+ }
+}

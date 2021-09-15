@@ -1,0 +1,198 @@
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+  font-family: Montserrat;
+}
+
+.section-bg {
+  background-color: #f6f9fe;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 8px 20px;
+  margin: 0;
+  background: #e7f1fd;
+  color: #106eea;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.section-title h3 {
+  margin: 15px 0 0 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.section-title h3 span {
+  color: #106eea;
+}
+
+.section-title p {
+  margin: 15px auto 0 auto;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .section-title p {
+    width: 50%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Featured Services
+--------------------------------------------------------------*/
+.featured-services .icon-box {
+  padding: 22px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all .8s ease-in-out;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 1;
+}
+
+.featured-services .icon-box::before {
+  content: '';
+  position: absolute;
+  background: #cbe0fb;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 100%;
+  transition: all 0.2s;
+  z-index: -1;
+}
+
+.featured-services .icon-box:hover::before {
+  background: #106eea;
+  bottom: 0;
+  border-radius: 0px;
+}
+
+.featured-services .icon {
+  margin-bottom: 15px;
+}
+
+.featured-services .icon i {
+  font-size: 55px;
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+  color: #106eea;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.featured-services .title {
+  font-weight: 700;
+  margin-bottom: 13px;
+  font-size: 18px;
+}
+
+.featured-services .title a {
+  text-decoration: none;
+  color: #111;
+}
+
+.featured-services .description {
+  font-size: 12px;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+
+.featured-services .icon-box:hover .title a, .featured-services .icon-box:hover .description , .icon i{
+  color: #fff;
+}
+
+.featured-services .icon-box:hover .icon i {
+  color: #fff;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+@media screen and (min-width:300px) and (max-width:667px)
+{
+  section {
+    padding: 40px 0 20px 0;
+    overflow: hidden;
+    font-family: Montserrat;
+  }
+  .featured-services{
+    padding:1rem auto;
+  }
+  .featured-services .icon-box {
+    padding: 22px;
+    position: relative;
+    width:80%;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+    transition: all .8s ease-in-out;
+    border-radius: 8px;
+    text-align: center;
+    margin:auto;
+    z-index: 1;
+  }
+
+  .featured-services .icon-box::before {
+    content: '';
+    position: absolute;
+    background: #cbe0fb;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 100%;
+    transition: all 0.2s;
+    z-index: -1;
+  }
+
+  .featured-services .icon-box:hover::before {
+    background: #106eea;
+    bottom: 0;
+    border-radius: 0px;
+  }
+
+  .featured-services .icon {
+    margin-bottom: 10px;
+  }
+
+  .featured-services .icon i {
+    font-size: 45px;
+    display: block;
+    text-align: center;
+    line-height: 1;
+    color: #106eea;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .description p {
+    margin: 12px auto 0 auto;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: .5rem;
+  }
+  .featured-services .title a {
+    text-decoration: none;
+    color: #111;
+    font-size: 1.75rem;
+  }
+}
+
+
+

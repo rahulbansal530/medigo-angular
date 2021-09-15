@@ -1,0 +1,39 @@
+$theme-color:#106EEA;
+
+
+#btn-float{
+
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: $theme-color;
+  cursor: pointer;
+  opacity: 0.85;
+
+  &:hover{
+    opacity: 0.9;
+    p{
+    display: block;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #222222;
+
+    }
+  }
+  p{
+    display: none;
+    margin: 0;
+
+  }
+  i{
+    &:hover{
+      // color: white;
+      // border:1px solid $theme-color;
+      font-size: 4rem;
+      transition: 50ms;
+    }
+  }
+
+
+}

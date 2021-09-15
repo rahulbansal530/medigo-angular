@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--  <link rel="stylesheet" href="home.css">-->
+    <style>
+
+  </style>
+</head>
+<body>
+<div class="row">
+    <div class="col-75">
+        <div class="container">
+            <form method="post"  action="/pay" (ngSubmit)="onSubmit_pay()">
+                <div class="col-50">
+                    <h3>Payment</h3>
+                    <label>Accepted Cards</label>
+                    <div class="icon-container">
+                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                        <i class="fa fa-cc-amex" style="color:blue;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                    </div>
+                    <label for="price">Total</label>
+                    <input disabled [(ngModel)]="form_payment.price" name="price" type="text" id="price" value={{disPrice}}  placeholder={{disPrice}}>
+                    <label for="currency">Currency</label>
+                    <input  [(ngModel)]="form_payment.currency" name="currency" type="text" id="currency" placeholder="Enter Currency">
+                    <label  for="method">Payment Method</label>
+                    <input disabled [(ngModel)]="form_payment.method" name="method" type="text" id="method" placeholder="Accepts only PayPal" value="">
+                    <label for="intent">Intent</label>
+                    <input [(ngModel)]="form_payment.intent" name="intent" type="text" id="intent" value="sale">
+                    <label for="description">Payment Description</label>
+                    <input [(ngModel)]="form_payment.description" name="description" type="text" id="description" placeholder="Payment Description">
+
+                </div>
+
+                <input type="submit" value="Continue to checkout" (click)="checkout()" class="btn">
+            </form>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

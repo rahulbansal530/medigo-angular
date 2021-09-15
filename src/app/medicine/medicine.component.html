@@ -1,0 +1,42 @@
+
+<app-banner-category  bannerTitle={{category_name}}></app-banner-category>
+<app-offers carousel_pic={{carousel_pic}}></app-offers>
+
+<!-- search sort component begins -->
+<div class="wrap d-flex">
+  <div class="sort">
+    <!-- <div class="dropdown"> -->
+      <!-- <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+        Sort By
+      </a> -->
+      <div class=" sort-btn" id="dropdownMenuLink">
+        <select [(ngModel)]="sortDirection" (ngModelChange)="onSortDirection($event)">
+          <option class="dropdown-item" data-sort="discountedPrice:asc" value='asc'>Low to High</option>
+          <option class="dropdown-item" data-sort="discountedPrice:desc" value='desc'>High to low</option>
+        </select>
+      </div>
+    <!-- </div> -->
+ </div>
+
+  <div class="search">
+     <input type="text" class="searchTerm" placeholder="What are you looking for?" [(ngModel)]="searchString">
+     <button type="submit" class="searchButton">
+       <i class="fa fa-search"></i>
+    </button>
+  </div>
+</div>
+<!-- search sort component ends -->
+
+<div class="productCards">
+  <div class="productCardsItem"  *ngFor="let product of products| search:searchString | sort:[sortByPara,sortDirection]">
+    <app-product-card [product]=product></app-product-card>
+  </div>
+</div>
+
+
+<div style="display: none;">
+  <p >{{products[0].name}}</p>
+</div>
+
+<app-featured-products></app-featured-products>
+<app-footer></app-footer>

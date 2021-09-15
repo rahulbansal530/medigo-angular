@@ -1,0 +1,16 @@
+<div class="cards" >
+
+  <!-- <div class="card" *ngFor="let brand of brandList" routerLink="/medicines" (click)="getMedicineBrand(brand.brandName)" > -->
+  <div class="card" *ngFor="let brand of brandList" routerLink="/medicines/{{brand.brandName}}" (click)="getMedicineBrand(brand.brandName)" >
+    <div class="card__image-holder">
+      <img class="card__image" src={{brand.image}} alt="wave" />
+    </div>
+    <div class="card-title">
+      <h2>
+        {{brand.brandName}}
+      </h2>
+    </div>
+
+
+</div>
+

@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+// COLOR THEMES
+$theme-color:#106EEA;
+$theme-color-hover:#3b8af2;
+$black-nav:#222222;
+$black-top:#222222;
+$black-top2:#555555;
+$black-body:#444444;
+$theme-grey:#F1F6FE;
+$dark-blue-text:#062B5B; // (to be used with theme gray )
+$theme-light-grey:#F6F9FE;
+$grey-text-contactus:#777777;
+
+// FONT THEMES
+$font-heading:Montserrat;
+
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-heading;
+  display: flex;
+  min-height: 100vh;
+}
+
+h2{
+  text-align: center;
+  font-size: 3.5rem;
+  margin:0rem auto 3rem auto;
+  color:$black-nav;
+  font-weight: 700;
+  opacity: .8;
+}
+.containerr {
+  font-family: Montserrat;
+  margin: 0 auto;
+  width: 100%;
+  padding: 4rem;
+  background-color: $theme-light-grey;
+}
+
+.accordion {
+  .accordion-item {
+    margin:.5rem auto 2rem auto;
+    background-color: $theme-grey;
+    border-radius: 2rem;
+    border:none;
+    button[aria-expanded='true'] {
+      border-bottom: 0.0625rem solid lightsteelblue;
+    }
+  }
+  button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1rem 0;
+    color: $black-body;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;
+    background: none;
+    outline: none;
+    &:hover, &:focus {
+      cursor: pointer;
+      color: $black-body;
+      &::after {
+        cursor: pointer;
+        color: $grey-text-contactus;
+        border: 0.0625rem solid $black-top2;
+      }
+    }
+    .accordion-title {
+      font-size: 1.5rem;
+      color:$grey-text-contactus;
+      margin: 2rem 2rem ;
+    }
+    .icon {
+      display: inline-block;
+      position: absolute;
+      top: 1.25rem;
+      right: 2rem;
+      width: 1.375rem;
+      height: 1.375rem;
+      border: 0.0625rem solid;
+      border-radius: 1.375rem;
+      color:$theme-color;
+      &::before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 0.5625rem;
+        left: 0.3125rem;
+        width: 0.625rem;
+        height: 0.125rem;
+        background: currentColor;
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 0.3125rem;
+        left: 0.5625rem;
+        width: 0.125rem;
+        height: 0.625rem;
+        background: currentColor;
+      }
+    }
+  }
+  button[aria-expanded='true'] {
+    color: $theme-color;
+    .icon {
+      &::after {
+        width: 0;
+      }
+    }
+    + .accordion-content {
+      opacity: 1;
+      max-height: 6rem;
+      transition: all 200ms linear;
+      will-change: opacity, max-height;
+    }
+  }
+  .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    color:$dark-blue-text;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    p {
+      font-size: 1.25rem;
+      font-weight: 400;
+      margin:1rem 2rem 2rem 2rem ;
+    }
+  }
+}
+
+@media screen and (min-width:300px) and (max-width:667px)
+{
+  h2{
+    text-align: center;
+    font-size: 2rem;
+    margin:0rem auto 3rem auto;
+    color:$black-nav;
+    font-weight: 700;
+    opacity: .8;
+  }
+  .containerr {
+    margin: 0 auto;
+    width: 100%;
+    padding: 2rem;
+    background-color: $theme-light-grey;
+  }
+
+  .accordion {
+    .accordion-item {
+      margin:.5rem auto 2rem auto;
+      background-color: $theme-grey;
+      border-radius: 2rem;
+      border:none;
+      button[aria-expanded='true'] {
+        border-bottom: 0.0625rem solid lightsteelblue;
+      }
+    }
+    button {
+      position: relative;
+      display: block;
+      text-align: left;
+      width: 100%;
+      padding: 1rem 0;
+      color: $black-body;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      background: none;
+      outline: none;
+      &:hover, &:focus {
+        cursor: pointer;
+        color: $black-body;
+        &::after {
+          cursor: pointer;
+          color: $grey-text-contactus;
+          border: 0.0625rem solid $black-top2;
+        }
+      }
+      .accordion-title {
+        font-size: 1.25rem;
+        color:$grey-text-contactus;
+        margin: 1.5rem 1rem ;
+      }
+      .icon {
+        display: inline-block;
+        position: absolute;
+        top: 1.25rem;
+        right: 2rem;
+        width: 1.375rem;
+        height: 1.375rem;
+        border: 0.0625rem solid;
+        border-radius: 1.375rem;
+        color:$theme-color;
+        &::before {
+          display: block;
+          position: absolute;
+          content: '';
+          top: 0.5625rem;
+          left: 0.3125rem;
+          width: 0.625rem;
+          height: 0.125rem;
+          background: currentColor;
+        }
+        &::after {
+          display: block;
+          position: absolute;
+          content: '';
+          top: 0.3125rem;
+          left: 0.5625rem;
+          width: 0.125rem;
+          height: 0.625rem;
+          background: currentColor;
+        }
+      }
+    }
+    button[aria-expanded='true'] {
+      color: $theme-color;
+      .icon {
+        &::after {
+          width: 0;
+        }
+      }
+      + .accordion-content {
+        opacity: 1;
+        max-height: 6rem;
+        transition: all 200ms linear;
+        will-change: opacity, max-height;
+      }
+    }
+    .accordion-content {
+      opacity: 0;
+      max-height: 0;
+      color:$dark-blue-text;
+      overflow: hidden;
+      transition: opacity 200ms linear, max-height 200ms linear;
+      will-change: opacity, max-height;
+      p {
+        font-size: 1rem;
+        font-weight: 400;
+        margin:1.5rem;
+        margin-bottom:2rem ;
+      }
+    }
+  }
+}
+
+
+

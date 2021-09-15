@@ -1,0 +1,50 @@
+<app-banner-category bannerTitle="Cart Details"></app-banner-category>
+<!-- <div class="cart-page"> -->
+
+  <div class="title"><h1>Order Summary</h1></div>
+  <div class="wrapper">
+    <div class="products">
+      <h3>PRODUCTS</h3>
+      <h4 *ngIf="cart_products_final.size==0"><em>Your cart is empty</em>🙁&nbsp;<em>Start adding items now. </em></h4>
+      <div *ngFor="let cartItem of cart_products_final">
+      <app-cart-item  [cartItem]="cartItem"></app-cart-item>
+
+      </div>
+      <!-- <app-cart-item *ngFor="let cartItem of cart_products" [cartItem]="cartItem"></app-cart-item> -->
+      <!-- <app-cart-item></app-cart-item>
+      <app-cart-item></app-cart-item>
+      <app-cart-item></app-cart-item>
+      <app-cart-item></app-cart-item> -->
+    </div>
+    <div class="payment-details">
+      <h3>PAYMENT DETAILS</h3>
+      <div class="mrp">
+        <span>MRP Total</span>
+        <span>Rs.{{cart.totalPrice.toFixed(2)}}</span>
+      </div>
+      <div class="discount">
+        <span>MediGo Discount</span>
+        <span>- Rs.{{(cart.totalPrice - cart.discountedPrice).toFixed(2)}}</span>
+      </div>
+      <div class="amount">
+        <span>Total Amount*</span>
+        <span>Rs.{{cart.discountedPrice.toFixed(2)}}</span>
+      </div>
+      <div class="total-savings">TOTAL SAVINGS Rs.{{(cart.totalPrice-cart.discountedPrice).toFixed(2)}}</div>
+      <div class="final-amount">
+        <div class="total-amount">
+          <p class="label">TOTAL AMOUNT</p>
+          <p class="value"><strong>Rs.{{cart.discountedPrice.toFixed(2)}}</strong> </p>
+        </div>
+        <button [disabled]="cart.discountedPrice==0"  routerLink="/payment" class="btn-proceed" >PROCEED</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div>
+    {{cart_products_final[0].product.name}}
+  </div> -->
+<!-- <app-featured-products></app-featured-products> -->
+<!-- </div> -->
+<app-footer></app-footer>
+

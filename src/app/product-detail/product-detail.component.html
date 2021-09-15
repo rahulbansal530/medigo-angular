@@ -1,0 +1,44 @@
+<app-banner-category bannerTitle="Product Details"></app-banner-category>
+<section id="product-details">
+  <div class="product-details-image">
+    <img src={{product?.image}} alt="">
+  </div>
+  <div class="product-details-description">
+    <div class="details">
+      <h1 class="descriptionTitle">{{product?.name}}</h1>
+      <div>
+        <label class="medicineDescriptionLabel" for="">Brand:&ensp;</label>
+        <a *ngIf="product?.categoryName == 'medicine'" routerLink="/medicines/{{product?.brand}}"><h3 class="brandName">{{product.brand}}</h3>
+        </a>
+        <a *ngIf="product?.categoryName != 'medicine'" ><h3 class="brandName">{{product?.brand}}</h3>
+        </a>
+      </div>
+      <div>
+        <label class="medicineDescriptionLabel" for="">Description:&ensp;</label>
+        <h3 class="medicineDescription">{{product?.description}}</h3>
+      </div>
+      <div class="price">
+        <span class = "price-old">Rs. {{product?.costPrice}}</span>
+        <span class="price-new">Rs. {{product?.discountedPrice}}</span>
+      </div>
+      <div class="flex" >
+        <label class="quantityLabel" for="">Quantity:</label>
+        <div class="quantity">
+          <a href="javascript:void(0);" (click)="decreaseQuantity()"><i class="fa fa-minus-circle fa-2x"></i></a>
+          <input type="number" class="quantityValue" [(ngModel)]="quantity"  (change)="checkZero()" min=10>
+          <a href="javascript:void(0);" (click)="increaseQuantity()"> <i class="fa fa-plus-circle fa-2x"></i></a>
+          <!-- <span></span> -->
+        </div>
+      </div>
+      <div class="add-to-cart">
+        <!-- <img src="" alt=""> -->
+        <button class = "btn-cart" (click)="addToCart(product?.prodId)" >
+          <i class="fa fa-shopping-cart"></i>
+      ADD TO CART</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+<app-featured-products></app-featured-products>
+<app-footer></app-footer>

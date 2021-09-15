@@ -1,0 +1,345 @@
+// COLOR THEMES
+$theme-color:#106EEA;
+$theme-color-hover:#3b8af2;
+$black-nav:#222222;
+$black-top:#222222;
+$black-top2:#555555;
+$black-body:#444444;
+$theme-grey:#F1F6FE;
+$dark-blue-text:#062B5B; // (to be used with theme gray )
+$theme-light-grey:#F6F9FE;
+$grey-text-contactus:#777777;
+
+// FONT THEMES
+$font-heading:Montserrat;
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+
+*{
+  font-family: $font-heading;
+}
+.about-component{
+  margin-top:9rem;
+}
+.breadcrumbs {
+  margin: 8rem 5rem .5rem 5rem;
+  padding: 0.9375rem 0;
+  background-color: $theme-color;
+  min-height: 6rem;
+  border-radius: 1rem;
+}
+
+.breadcrumbs h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin:1rem auto;
+  color:$theme-grey
+}
+
+.adjust-slide{
+  height:40rem;
+  img{
+    height:38rem;
+   box-shadow: 0 0.3125rem 1.25rem $theme-grey;
+   border-radius: 1.5rem;
+  }
+}
+
+@media (max-width: 62rem) {
+  .breadcrumbs h2 {
+    margin: 0 0 0.625rem 0;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .content h3 {
+  font-weight: 600;
+  font-size: 1.625rem;
+}
+
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 1.25rem;
+}
+
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: .5rem;
+  position: relative;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+  opacity: 1;
+  border: 0.0625rem solid $theme-color;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: $theme-color;
+}
+
+.portfolio-details .portfolio-info {
+  padding: 1.875rem;
+  height:38rem;
+  box-shadow: 0rem 0 1.875rem rgba(34, 34, 34, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 0.0625rem solid #eee;
+}
+.color-medigo{
+  color:$theme-color;
+}
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+
+.portfolio-details .portfolio-info ul li a{
+  color:$dark-blue-text;
+}
+.portfolio-details .portfolio-info ul li{
+  font-weight: 550;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 0.625rem;
+}
+
+.portfolio-description{
+  border:2px solid red;
+  margin-top:8rem;
+}
+.portfolio-details .portfolio-description {
+  padding-top: 1.875rem;
+  background-color:$theme-grey;
+  height:35rem;
+  margin-top: 2rem;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 1.625rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  padding: 0rem 2rem 0rem 2rem;
+}
+
+.portfolio-details .portfolio-description p {
+  font-size: 1.5rem;
+  padding: 0rem 2rem 2rem 2rem;
+}
+
+.left-right{
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 6rem;
+}
+.carousel-control{
+  text-decoration: none;
+}
+
+.item{
+  height:40rem;
+  img{
+    height: 38rem;
+    width: 100%;
+  }
+}
+.carousel-indicators li{
+  margin-bottom:-25rem;
+  background-color:white;
+  border:.5px solid $theme-color-hover;
+}
+
+.carousel-indicators .active{
+  margin-bottom:-25rem;
+  background-color:$theme-color;
+  border:.5px solid $theme-light-grey;
+}
+.carousel-indicators{
+  margin:auto;
+}
+
+//for mobile
+@media screen and (min-width:300px) and (max-width:667px)
+{
+  .about-component{
+    margin-top:9rem;
+  }
+  .breadcrumbs {
+    margin: 8rem 1rem .5rem 1rem;
+    padding: 1rem 0;
+    background-color: $theme-color;
+    min-height: 5rem;
+    border-radius: 1rem;
+  }
+
+  .breadcrumbs h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin:1.5rem auto;
+    color:$theme-grey;
+    margin: auto;
+    margin-top:.5rem;
+  }
+
+
+  .adjust-slide{
+    height:30rem;
+    img{
+      height:25rem;
+     box-shadow: 0 0.3125rem 1.25rem $theme-grey;
+     border-radius: 1.5rem;
+    }
+  }
+
+  /*--------------------------------------------------------------
+  # About
+  --------------------------------------------------------------*/
+  .about .content h3 {
+    font-weight: 600;
+    font-size: 1.625rem;
+  }
+
+
+  /*--------------------------------------------------------------
+  # Portfolio Details
+  --------------------------------------------------------------*/
+  .portfolio-details {
+    padding-top: 1.25rem;
+  }
+
+  .portfolio-details .portfolio-details-slider img {
+    width: 100%;
+  }
+
+
+  .portfolio-details .portfolio-details-slider .swiper-pagination {
+    margin-top: .5rem;
+    position: relative;
+  }
+
+  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 0.75rem;
+    height: 0.75rem;
+    opacity: 1;
+    border: 0.0625rem solid $theme-color;
+  }
+
+  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: $theme-color;
+  }
+
+  .portfolio-details .portfolio-info {
+    padding: 1.875rem;
+    height:38rem;
+    box-shadow: 0rem 0 1.875rem rgba(34, 34, 34, 0.08);
+  }
+
+  .portfolio-details .portfolio-info h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 0.0625rem solid #eee;
+  }
+  .color-medigo{
+    color:$theme-color;
+  }
+  .portfolio-details .portfolio-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+
+  .portfolio-details .portfolio-info ul li a{
+    color:$dark-blue-text;
+  }
+  .portfolio-details .portfolio-info ul li{
+    font-weight: 550;
+  }
+
+  .portfolio-details .portfolio-info ul li + li {
+    margin-top: 0.625rem;
+  }
+
+  .portfolio-description{
+    border:2px solid red;
+    margin-top:8rem;
+  }
+  .portfolio-details .portfolio-description {
+    padding-top: 1.875rem;
+    background-color:$theme-grey;
+    height:35rem;
+    margin-top: 2rem;
+  }
+
+  .portfolio-details .portfolio-description h2 {
+    font-size: 1.625rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    padding: 0rem 2rem 0rem 2rem;
+  }
+
+  .portfolio-details .portfolio-description p {
+    font-size: 1.5rem;
+    padding: 0rem 2rem 2rem 2rem;
+  }
+
+  .left-right{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 6rem;
+  }
+  .carousel-control{
+    text-decoration: none;
+  }
+
+  .item{
+    height:28rem;
+    img{
+      height: 25rem;
+      width: 100%;
+    }
+  }
+  .carousel-indicators li{
+    margin-bottom:.2rem;
+    background-color:white;
+    border:.5px solid $theme-color-hover;
+  }
+
+  .carousel-indicators .active{
+    margin-bottom:.2rem;
+    background-color:$theme-color;
+    border:.5px solid $theme-light-grey;
+  }
+  .carousel-indicators{
+    margin:auto;
+  }
+
+}
+
+
+
+
+

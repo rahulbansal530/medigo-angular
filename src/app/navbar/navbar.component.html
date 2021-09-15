@@ -1,0 +1,69 @@
+<!-- ======= Header ======= -->
+<header id="headerr" class="d-flex align-items-center ">
+  <div class="containerr d-flex align-items-center justify-content-between">
+    <!-- mobile screen hamburger -->
+    <div class="hamburger-menu" >
+      <input id="menu__toggle" type="checkbox" (click)="onClick2()" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+      <ul class="menu__box" *ngIf="toggle===true">
+        <li><a class="menu__item" routerLink="/home" (click)="onClick()"><i class="fa fa-home"></i> &nbsp; Home</a></li>
+        <li><a class="menu__item" routerLink="/about" (click)="onClick()"><i class="fa fa-info-circle"></i> &nbsp;  About</a></li>
+        <li><a class="menu__item" routerLink="/brands" (click)="onClick()"><i class="fa fa-plus-square" ></i> &nbsp; Medicines</a></li>
+        <li><a class="menu__item" routerLink="/equipments" (click)="onClick()"><i class="fa fa-user-md"></i> &nbsp; Equipments</a></li>
+        <li><a class="menu__item" routerLink="/baby-care" (click)="onClick()"><i class="fa fa-child"></i> &nbsp; Baby Care</a></li>
+        <li><a class="menu__item" routerLink="/personal-care" (click)="onClick()"><i class="fa fa-heart p-care"></i> &nbsp; Personal Care</a></li>
+        <li><a class="menu__item" routerLink="/covid" (click)="onClick()"><i class="fa fa-medkit"></i>&nbsp; Covid Essentials</a></li>
+        <li ><a class="menu__item" routerLink="/cart" (click)="onCart()" (click)="onClick()"><i class="fa fa-shopping-cart"></i>&nbsp; Cart</a></li>
+        <li *ngIf="!isLoggedIn"><a class="menu__item" routerLink="/login-signup" (click)="onClick()"><i class="fa fa-user"></i>&nbsp; Login/Signup</a></li>
+        <li style="cursor:pointer" *ngIf="isLoggedIn"><a (click)="logout()" (click)="onClick()" class="menu__item"><i class="fa fa-power-off"></i>
+          &nbsp; Logout</a></li>
+      </ul>
+    </div>
+
+
+    <div class="d-flex logo-div">
+      <h1 class="logo"><a routerLink="/home" class="nav-link scrollto" href="javascript:void(0)">Medi<span>Go</span></a></h1>
+    </div>
+    <nav id="navbar" class="navbarr">
+      <ul>
+        <li><a class="nav-link scrollto" routerLink="/home">Home</a></li>
+        <li><a class="nav-link scrollto" routerLink="/about">About</a></li>
+        <li class="dropdown"><a class=" scrollto nav-link"><span>Categories</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a routerLink="/brands"  class=" scrollto nav-link">Medicines</a></li>
+            <li><a routerLink="/equipments" (click)="getPageName('equipment')" class=" scrollto nav-link">Equipments</a></li>
+            <li><a routerLink="/personal-care" (click)="getPageName('personal')" class=" scrollto nav-link">Personal Care</a></li>
+            <li><a routerLink="/baby-care" (click)="getPageName('baby')" class=" scrollto nav-link">Baby Care</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link scrollto" routerLink="/covid">Covid Essentials</a></li>
+        <!-- <li><button class="nav-link scrollto cart-btn" href="#" (mouseleave)="toggleSelected()">
+          <img *ngIf="selected" src="/assets/homepage/cart-icon.svg" alt="" class="cart-icon">
+          <img *ngIf="!selected" src="/assets/homepage/cart-icon-blue.svg" alt="" class="cart-icon-blue">
+        </button></li> -->
+        <li>
+          <button class="nav-link scrollto cart-btn" routerLink="/cart" (click)="onCart()">
+              <i class="fa fa-cart-plus" aria-hidden="true"></i>
+          </button>
+        </li>
+        <li *ngIf="!isLoggedIn">
+          <button class="nav-link scrollto cart-btn"
+            routerLink="/login-signup" >
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </button>
+        </li>
+        <!-- <li *ngIf="isLoggedIn">
+          <button (click)="logout()" class="nav-link scrollto cart-btn active"
+            >
+            Logout
+          </button>
+        </li> -->
+        <li style="cursor:pointer" *ngIf="isLoggedIn"><a (click)="logout()" class="nav-link scrollto" >Logout</a></li>
+
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+  </div>
+</header>

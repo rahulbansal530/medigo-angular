@@ -1,0 +1,36 @@
+<div class="cart-item-card">
+  <div class="image">
+    <img src={{cartItem?.product?.image}} alt="">
+  </div>
+  <div class="cart-item-details">
+    <div class="title"><h3>{{cartItem?.product?.name}}</h3></div>
+    <div class="brand">
+      Mkt: {{cartItem?.product?.brand}}
+    </div>
+    <div class="price-and-quantity">
+      <div class="price">
+        <span class="price-new">Rs. {{cartItem?.product?.discountedPrice}}</span>
+        <span class = "price-old">Rs. {{cartItem?.product?.costPrice}}</span>
+      </div>
+      <div class="quantity-wrap">
+        <!-- <div class="flex" > -->
+          <label class="quantityLabel" for=""><h5>QTY:</h5></label>
+          <div class="quantity">
+            <a href="javascript:void(0);" (click)="decreaseQuantity()"><i class="fa fa-minus-circle fa-2x"></i></a>
+            <input type="number" class="quantityValue" [(ngModel)]=cartItem.quantity  (change)="checkZero()" min=10>
+            <a href="javascript:void(0);" (click)="increaseQuantity()"> <i class="fa fa-plus-circle fa-2x"></i></a>
+            <!-- <span></span> -->
+          </div>
+        <!-- </div> -->
+      </div>
+    </div>
+    <div class="remove">
+      <button (click)="removeFromCart()" class="btn-remove">REMOVE</button>
+    </div>
+  </div>
+
+  <!-- <div>
+    {{cartItem.product.name}}
+  </div> -->
+
+</div>
