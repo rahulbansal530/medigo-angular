@@ -1,0 +1,104 @@
+{
+  "brands": [
+    {
+      "brandId": 1,
+      "brandName": "Abbott Healthcare Pvt. Limited",
+      "image": "/assets/brands_logo/brand1.jpg"
+    },
+    {
+      "brandId": 2,
+      "brandName": "Allergan India Private Limited",
+      "image": "/assets/brands_logo/brand2.jpg"
+    },
+    {
+      "brandId": 3,
+      "brandName": "Astrazeneca Pharma India Limited",
+      "image": "/assets/brands_logo/brand3.jpg"
+    },
+    {
+      "brandId": 4,
+      "brandName": "Alembic Pharmaceuticals Limited",
+      "image": "/assets/brands_logo/brand4.jpg"
+    },
+    {
+      "brandId": 5,
+      "brandName": "A.n.pharmacia Laboratories (p) Limited",
+      "image": "/assets/brands_logo/brand5.jpg"
+    },
+    {
+      "brandId": 6,
+      "brandName": "Apex Laboratories Private Limited",
+      "image": "/assets/brands_logo/brand6.jpg"
+    },
+    {
+      "brandId": 7,
+      "brandName": "Alteus Biogenics Pvt. Limited",
+      "image": "/assets/brands_logo/brand7.jpg"
+    },
+    {
+      "brandId": 8,
+      "brandName": "Bayer Zydus Pharma Pvt. Limited",
+      "image": "/assets/brands_logo/brand8.jpg"
+    },
+    {
+      "brandId": 9,
+      "brandName": "Chemical Industrial & Pharmaceutical Labs Ltd",
+      "image": "/assets/brands_logo/brand9.jpg"
+    },
+    {
+      "brandId": 10,
+      "brandName": "Dabur India Limited(Pharma Division)",
+      "image": "/assets/brands_logo/brand10.jpg"
+    },
+    {
+      "brandId": 11,
+      "brandName": "East India Pharmaceutical Works Limited",
+      "image": "/assets/brands_logo/brand11.jpg"
+    },
+    {
+      "brandId": 12,
+      "brandName": "Emcure Pharmaceuticals Limited",
+      "image": "/assets/brands_logo/brand12.jpg"
+    },
+    {
+      "brandId": 13,
+      "brandName": "Fourrts India Laboratories Pvt. Limited",
+      "image": "/assets/brands_logo/brand13.jpg"
+    },
+    {
+      "brandId": 14,
+      "brandName": "Franco Indian Pharmaceuticals Pvt Ltd",
+      "image": "/assets/brands_logo/brand14.jpg"
+    },
+    {
+      "brandId": 15,
+      "brandName": "Galderma India Pvt. Limited",
+      "image": "/assets/brands_logo/brand15.jpg"
+    },
+    {
+      "brandId": 16,
+      "brandName": "Glenmark Pharmaceuticals Limited",
+      "image": "/assets/brands_logo/brand16.jpg"
+    },
+    {
+      "brandId": 17,
+      "brandName": "H & H Pharmaceutica Pvt Limited",
+      "image": "/assets/brands_logo/brand17.jpg"
+    },
+    {
+      "brandId": 18,
+      "brandName": "Indiabulls Pharmaceuticals Limited",
+      "image": "/assets/brands_logo/brand18.jpg"
+    },
+    {
+      "brandId": 19,
+      "brandName": "Novartis India Private Limited",
+      "image": "/assets/brands_logo/brand19.jpg"
+    },
+    {
+      "brandId": 20,
+      "brandName": "Sugar Free Private Limited (By Zydus)",
+      "image": "/assets/brands_logo/brand20.jpg"
+    }
+  ]
+}
